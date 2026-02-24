@@ -1,13 +1,13 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.serviceImpl;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.serviceImpl;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.MessageResponseDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.exception.BusinessException;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.MensajeRespuesta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.UsuarioDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.service.UsuarioService;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.dao.UsuarioDAO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.entity.Usuario;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.repository.UsuarioRepository;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.MessageResponseDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.exception.BusinessException;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.Constantes.MensajeRespuesta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.UsuarioDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.service.UsuarioService;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.dao.UsuarioDAO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.entity.Usuario;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

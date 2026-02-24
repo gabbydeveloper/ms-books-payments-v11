@@ -1,6 +1,6 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.exception;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.exception;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.MensajeRespuesta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.Constantes.MensajeRespuesta;
 import lombok.Getter;
 
 @Getter

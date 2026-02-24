@@ -1,8 +1,8 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.dao;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.dao;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.UsuarioDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.entity.Usuario;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.utils.PasswordGenerator;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.UsuarioDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.entity.Usuario;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.utils.PasswordGenerator;
 import org.springframework.stereotype.Component;
 
 @Component

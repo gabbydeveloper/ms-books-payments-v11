@@ -1,9 +1,9 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.dao;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.dao;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.ProductoFacturadoDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.entity.ProductoFacturado;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.entity.Venta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.repository.VentaRepository;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.ProductoFacturadoDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.entity.ProductoFacturado;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.entity.Venta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.repository.VentaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

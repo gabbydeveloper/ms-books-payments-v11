@@ -1,4 +1,4 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto;
 
 import lombok.Data;
 

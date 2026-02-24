@@ -1,8 +1,8 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.web.controller;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.web.controller;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.exception.BusinessException;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.MensajeRespuesta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.MessageResponseDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.exception.BusinessException;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.Constantes.MensajeRespuesta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.MessageResponseDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

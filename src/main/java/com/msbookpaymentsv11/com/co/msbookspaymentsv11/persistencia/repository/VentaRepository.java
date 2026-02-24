@@ -1,7 +1,7 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.repository;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.repository;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.EstadoVenta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.entity.Venta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.Constantes.EstadoVenta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.entity.Venta;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

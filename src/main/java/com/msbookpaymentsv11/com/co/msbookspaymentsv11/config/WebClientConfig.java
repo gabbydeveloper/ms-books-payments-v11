@@ -1,4 +1,4 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.config;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

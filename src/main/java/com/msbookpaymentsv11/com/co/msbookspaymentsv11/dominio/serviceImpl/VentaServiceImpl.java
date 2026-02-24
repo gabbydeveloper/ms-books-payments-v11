@@ -1,14 +1,14 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.serviceImpl;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.serviceImpl;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.EstadoVenta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.MessageResponseDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.exception.BusinessException;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.MensajeRespuesta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.VentaDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.service.VentaService;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.dao.VentaDAO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.entity.Venta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.persistencia.repository.VentaRepository;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.Constantes.EstadoVenta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.MessageResponseDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.exception.BusinessException;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.Constantes.MensajeRespuesta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.VentaDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.service.VentaService;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.dao.VentaDAO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.entity.Venta;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.persistencia.repository.VentaRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

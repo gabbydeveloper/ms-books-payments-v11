@@ -1,7 +1,7 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.service;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.service;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.MessageResponseDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.VentaDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.MessageResponseDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.VentaDTO;
 
 import java.util.List;
 import java.util.Optional;

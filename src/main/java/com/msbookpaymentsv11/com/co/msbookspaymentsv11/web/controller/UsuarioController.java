@@ -1,9 +1,8 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10.web.controller;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11.web.controller;
 
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.Constantes.MensajeRespuesta;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.MessageResponseDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.dto.UsuarioDTO;
-import com.msbookpaymentsv10.com.co.ms_books_payments_v10.dominio.service.UsuarioService;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.MessageResponseDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto.UsuarioDTO;
+import com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.service.UsuarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
