@@ -1,10 +1,10 @@
-package com.msbookpaymentsv10.com.co.ms_books_payments_v10;
+package com.msbookpaymentsv11.com.co.msbookspaymentsv11;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Msbookspaymentsv10ApplicationTests {
+class MsBooksPaymentsV11ApplicationTests {
 
 	@Test
 	void contextLoads() {
