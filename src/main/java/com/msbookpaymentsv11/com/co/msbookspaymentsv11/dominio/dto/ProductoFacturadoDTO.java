@@ -1,10 +1,18 @@
+//DECLARACIÓN DE PAQUETES:
 package com.msbookpaymentsv11.com.co.msbookspaymentsv11.dominio.dto;
 
+//IMPORTACIÓN DE LIBRERIAS:
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-@Data
+/**
+* @Autor MARIA GABRIELA ZAPATA DIAZ.
+* @Since 19/02/2026.
+* Declaración del DTO para los productos facturados dentro de una venta.
+*/
+@Data//DECLARACIÓN DE LA DATA PARA LOS DATOS DE LA TABLA DE LA BASE DE DATOS PARA LOS DTO.
 public class ProductoFacturadoDTO {
+  //DECLARACIÓN DE LAS VARIABLES DE LOS CAMPOS DE LA TABLA DE LA BASE DE DATOS PARA LOS DTO:
   @Schema(description = "ID generado automáticamente (NO ENVIAR)", example = "1")
   private Long idProductoFacturado;
   @Schema(description = "ID de la venta (tiene que existir una venta)", example = "1")

@@ -8,11 +8,11 @@
 		<version>3.2.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.msbookpaymentsv10.com.co</groupId>
-	<artifactId>ms-books-payments-v10</artifactId>
+	<groupId>com.msbookpaymentsv11.com.co</groupId>
+	<artifactId>ms-books-payments-v11</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>msbookspaymentsv10</name>
-	<description>Microservicio que ejecuta el registro de las compras</description>
+	<name>msbookspaymentsv11</name>
+	<description>Microservicio que ejecuta el registro de las compras.</description>
 	<!--Cambiado el empaquetado de JAR a WAR.-->
 	<packaging>jar</packaging>
 	<properties>
