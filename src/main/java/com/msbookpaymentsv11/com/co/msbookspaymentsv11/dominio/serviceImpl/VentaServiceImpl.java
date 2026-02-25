@@ -72,6 +72,8 @@ public class VentaServiceImpl implements VentaService {
       venta.setNumeroOrden(ventaDTO.getNumeroOrden());
     }
 
+    ventaRepository.save(venta);
+
     return MessageResponseDTO.builder()
         .status(MensajeRespuesta.EXITO_REGISTRO_ACTUALIZADO.getStatus())
         .message(MensajeRespuesta.EXITO_REGISTRO_ACTUALIZADO.getMensaje())
@@ -86,5 +88,10 @@ public class VentaServiceImpl implements VentaService {
       throw new BusinessException(MensajeRespuesta.ERROR_REGISTRO_NO_ENCONTRADO);
     }
     return ventaDAO.ventaDTO(venta.get());
+  }
+
+  @Override
+  public Integer cuantosItemsVentaUsuario(Long idUsuario) {
+    return ventaRepository.cuantosItemsXVentaIngresadaXUsuario(idUsuario);
   }
 }

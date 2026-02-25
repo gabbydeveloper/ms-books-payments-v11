@@ -11,4 +11,5 @@ public interface ProductoFacturadoService {
   void eliminarProductoFacturado(Long idProductoFacturado);
   Integer cuantosProductosFacturadosPorIdLibro(Long idLibro);
   List<ProductoFacturadoDTO> listaProductosFacturadosXIdVenta(Long idVenta);
+  MessageResponseDTO actualizacionParcialProductoFacturado(Long idProductoFacturado, ProductoFacturadoDTO productoFacturadoDTO);
 }

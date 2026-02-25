@@ -28,6 +28,9 @@ public class ProductoFacturadoDAO {
     productoFacturado.setCantidadItem(productoFacturadoDTO.getCantidadItem());
     productoFacturado.setPrecioUnitarioLibro(productoFacturadoDTO.getPrecioUnitarioLibro());
     productoFacturado.setEstadoProductoFacturado("ACTIVO");
+    productoFacturado.setTituloLibro(productoFacturadoDTO.getTituloLibro());
+    productoFacturado.setCodigoImagen(productoFacturadoDTO.getCodigoImagen());
+    productoFacturado.setModalidad(productoFacturadoDTO.getModalidad());
 
     return productoFacturado;
   }
@@ -42,6 +45,9 @@ public class ProductoFacturadoDAO {
     productoFacturadoDTO.setCantidadItem(productoFacturado.getCantidadItem());
     productoFacturadoDTO.setPrecioUnitarioLibro(productoFacturado.getPrecioUnitarioLibro());
     productoFacturadoDTO.setEstadoProductoFacturado(productoFacturado.getEstadoProductoFacturado());
+    productoFacturadoDTO.setTituloLibro(productoFacturado.getTituloLibro());
+    productoFacturadoDTO.setCodigoImagen(productoFacturado.getCodigoImagen());
+    productoFacturadoDTO.setModalidad(productoFacturado.getModalidad());
 
     return productoFacturadoDTO;
   }

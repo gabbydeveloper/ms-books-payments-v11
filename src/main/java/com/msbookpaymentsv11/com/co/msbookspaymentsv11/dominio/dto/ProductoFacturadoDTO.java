@@ -17,4 +17,7 @@ public class ProductoFacturadoDTO {
   private double precioUnitarioLibro;
   @Schema(description = "Estado por default ACTIVO (NO ENVIAR)", example = "ACTIVO")
   private String estadoProductoFacturado;
+  private String tituloLibro;
+  private String codigoImagen;
+  private String modalidad;
 }

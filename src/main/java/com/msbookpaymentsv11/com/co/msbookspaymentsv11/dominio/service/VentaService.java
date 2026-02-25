@@ -11,4 +11,5 @@ public interface VentaService {
   MessageResponseDTO crearVenta(VentaDTO ventaDTO);
   MessageResponseDTO actualizarVenta(Long idVenta, VentaDTO ventaDTO);
   VentaDTO obtenerVentaIngresada(Long idUsuario);
+  Integer cuantosItemsVentaUsuario(Long idUsuario);
 }

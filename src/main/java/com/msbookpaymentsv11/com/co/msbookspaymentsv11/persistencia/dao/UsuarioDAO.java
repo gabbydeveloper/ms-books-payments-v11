@@ -21,6 +21,10 @@ public class UsuarioDAO {
     usuario.setClaveUsuario(claveGenerada);
     usuario.setEstadoUsuario("ACTIVO");
 
+    usuario.setNombreUsuario(usuarioDTO.getNombreUsuario());
+    usuario.setApellidoUsuario(usuarioDTO.getApellidoUsuario());
+    usuario.setTelefonoUsuario(usuarioDTO.getTelefonoUsuario());
+
     return usuario;
   }
 
@@ -32,6 +36,9 @@ public class UsuarioDAO {
     usuarioDTO.setCorreoUsuario(usuario.getCorreoUsuario());
     usuarioDTO.setClaveUsuario("************");
     usuarioDTO.setEstadoUsuario(usuario.getEstadoUsuario());
+    usuarioDTO.setNombreUsuario(usuario.getNombreUsuario());
+    usuarioDTO.setApellidoUsuario(usuario.getApellidoUsuario());
+    usuarioDTO.setTelefonoUsuario(usuario.getTelefonoUsuario());
 
     return  usuarioDTO;
   }

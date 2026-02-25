@@ -9,6 +9,8 @@ public enum MensajeRespuesta {
 
   EXITO_REGISTRO_ACTUALIZADO("Registro correctamente actualizado", HttpStatus.OK),
 
+  EXITO_REGISTRO_ELIMINADO("Registro eliminado con éxito", HttpStatus.OK),
+
   // ADVERTENCIAS / NEGOCIO
   ADVERTENCIA_REGISTRO_ID_NO_ENCONTRADO(
       "No se encontró el Registro con el Id proporcionado.",

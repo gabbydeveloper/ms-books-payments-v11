@@ -24,4 +24,13 @@ public class Usuario {
   @Column(name="ESTADO_USUARIO", nullable = false)
   private String estadoUsuario;
 
+  @Column(name="NOMBRE_USUARIO")
+  private String nombreUsuario;
+
+  @Column(name="APELLIDO_USUARIO")
+  private String apellidoUsuario;
+
+  @Column(name="TELEFONO_USUARIO")
+  private String telefonoUsuario;
+
 }

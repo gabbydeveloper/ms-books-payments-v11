@@ -31,6 +31,7 @@ public class ProductoFacturadoServiceImpl implements ProductoFacturadoService {
   @Override
   public MessageResponseDTO crearProductoFacturado(ProductoFacturadoDTO productoFacturadoDTO) {
     Long idLibro = productoFacturadoDTO.getIdLibro();
+    Long idVenta = productoFacturadoDTO.getIdVenta();
     Integer cantidad = productoFacturadoDTO.getCantidadItem();
 
     //Revisa el catalogue para traer el stock
@@ -40,8 +41,14 @@ public class ProductoFacturadoServiceImpl implements ProductoFacturadoService {
       throw new BusinessException(MensajeRespuesta.ERROR_STOCK_INSUFICIENTE);
     }
 
-    //Registra el producto facturado
-    ProductoFacturado nuevoProducto = productoFacturadoRepository.save(productoFacturadoDAO.productoFacturado(productoFacturadoDTO));
+    Optional<ProductoFacturado> productoExistente = productoFacturadoRepository.buscarExistente(idVenta, idLibro);
+
+    ProductoFacturado nuevoProducto = productoExistente
+        .map(p -> {
+          p.setCantidadItem(p.getCantidadItem() + cantidad);
+          return productoFacturadoRepository.save(p);
+        })
+        .orElseGet(() -> productoFacturadoRepository.save(productoFacturadoDAO.productoFacturado(productoFacturadoDTO)));
 
     //Registra la salida del inventario
     KardexInventarioDTO salidaDTO = new KardexInventarioDTO();
@@ -62,8 +69,7 @@ public class ProductoFacturadoServiceImpl implements ProductoFacturadoService {
 
     Optional<ProductoFacturado> productoFacturado = productoFacturadoRepository.findById(idProductoFacturado);
 
-    if(productoFacturado.isEmpty())
-    {
+    if (productoFacturado.isEmpty()) {
       throw new BusinessException(MensajeRespuesta.ERROR_REGISTRO_NO_ENCONTRADO);
     }
 
@@ -88,11 +94,38 @@ public class ProductoFacturadoServiceImpl implements ProductoFacturadoService {
   public List<ProductoFacturadoDTO> listaProductosFacturadosXIdVenta(Long idVenta) {
     List<ProductoFacturado> productos = productoFacturadoRepository.productosPorIdVenta(idVenta);
 
-    if(productos.isEmpty()){
+    if (productos.isEmpty()) {
       throw new BusinessException(MensajeRespuesta.ERROR_NO_EXISTEN_REGISTROS);
     }
 
     return productos.stream().map(productoFacturadoDAO::productoFacturadoDTO).toList();
+  }
+
+  @Override
+  public MessageResponseDTO actualizacionParcialProductoFacturado(Long idProductoFacturado, ProductoFacturadoDTO productoFacturadoDTO) {
+    Optional<ProductoFacturado> productoFacturadoExiste = productoFacturadoRepository.findById(idProductoFacturado);
+
+    if (productoFacturadoExiste.isEmpty()) {
+      throw new BusinessException(MensajeRespuesta.ERROR_REGISTRO_NO_ENCONTRADO);
+    }
+
+    ProductoFacturado productoFacturado = productoFacturadoExiste.get();
+
+    if (productoFacturadoDTO.getCantidadItem() != null) {
+      productoFacturado.setCantidadItem(productoFacturadoDTO.getCantidadItem());
+    }
+
+    if (productoFacturadoDTO.getEstadoProductoFacturado() != null) {
+      productoFacturado.setEstadoProductoFacturado(productoFacturadoDTO.getEstadoProductoFacturado());
+    }
+
+    productoFacturadoRepository.save(productoFacturado);
+
+    return MessageResponseDTO.builder()
+        .status(MensajeRespuesta.EXITO_REGISTRO_ACTUALIZADO.getStatus())
+        .message(MensajeRespuesta.EXITO_REGISTRO_ACTUALIZADO.getMensaje())
+        .idCreated(idProductoFacturado)
+        .build();
   }
 
 }

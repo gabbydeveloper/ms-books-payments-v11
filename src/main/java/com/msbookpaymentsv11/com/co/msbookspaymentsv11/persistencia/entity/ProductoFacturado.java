@@ -28,4 +28,13 @@ public class ProductoFacturado {
   @Column(name="ESTADO_PRODUCTO_FACTURADO")
   private String estadoProductoFacturado;
 
+  @Column(name="TITULO_LIBRO")
+  private String tituloLibro;
+
+  @Column(name="CODIGO_IMAGEN")
+  private String codigoImagen;
+
+  @Column(name="MODALIDAD")
+  private String modalidad;
+
 }

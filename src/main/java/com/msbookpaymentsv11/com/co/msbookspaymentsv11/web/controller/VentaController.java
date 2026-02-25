@@ -40,4 +40,10 @@ public class VentaController {
     return ResponseEntity.ok(ventaDTO);
   }
 
+  @GetMapping("/cuantositems/usuario/{idUsuario}")
+  public ResponseEntity<Integer> cuantosItemsVentaPorUsuario(@PathVariable Long idUsuario){
+    Integer cuantos = ventaService.cuantosItemsVentaUsuario(idUsuario);
+    return ResponseEntity.ok(cuantos);
+  }
+
 }

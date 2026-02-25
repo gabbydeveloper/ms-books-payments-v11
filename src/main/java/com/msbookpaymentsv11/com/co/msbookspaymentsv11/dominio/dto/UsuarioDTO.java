@@ -15,4 +15,7 @@ public class UsuarioDTO {
   private String claveUsuario;
   @Schema(description = "Estado del usuario (ACTIVO por default NO ENVIAR)", example = "ACTIVO/INACTIVO")
   private String estadoUsuario;
+  private String nombreUsuario;
+  private String apellidoUsuario;
+  private String telefonoUsuario;
 }

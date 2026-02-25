@@ -41,4 +41,10 @@ public class ProductoFacturadoController {
     return ResponseEntity.ok().build();
   }
 
+  @PatchMapping("/{idProductoFacturado}")
+  public ResponseEntity<MessageResponseDTO> actualizacionParcialProducto(@PathVariable Long idProductoFacturado, @RequestBody ProductoFacturadoDTO productoFacturadoDTO) {
+    MessageResponseDTO messageResponseDTO = productoFacturadoService.actualizacionParcialProductoFacturado(idProductoFacturado, productoFacturadoDTO);
+    return ResponseEntity.ok(messageResponseDTO);
+  }
+
 }
